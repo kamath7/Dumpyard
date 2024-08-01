@@ -14,17 +14,28 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public void deposit(double amountToBeAdded){
+    public void deposit(double amountToBeAdded) {
         this.balance += amountToBeAdded;
-        System.out.println("Balance successfuly updated. Current balance "+this.balance);
+        System.out.println("Balance successfuly updated. Current balance " + this.balance);
     }
 
-    public void withdraw(double withdrawalAmount){
-        if(balance - withdrawalAmount < 0) {
+    public void withdraw(double withdrawalAmount) {
+        if (balance - withdrawalAmount < 0) {
             System.out.println("You do not have sufficient balance to make a withdrawal");
         }
         this.balance -= withdrawalAmount;
-        System.out.println("Balance updated. Current balance "+this.balance);
+        System.out.println("Balance updated. Current balance " + this.balance);
     }
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
 }
