@@ -38,4 +38,13 @@ public class BankAccount {
     public double getBalance() {
         return balance;
     }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "accountNumber='" + accountNumber + '\'' +
+                ", accountHolderName='" + accountHolderName + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
