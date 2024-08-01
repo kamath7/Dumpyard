@@ -17,5 +17,16 @@ public class Main {
         bankAccountLombok.deposit(100);
         bankAccountLombok.withdraw(200);
         System.out.println(bankAccountLombok);
+
+        BankAccountBuilderLombok bankAccountBuilderLombok = BankAccountBuilderLombok.builder()
+                                                                                    .accountNumber("10092")
+                                                                                    .accountName("Cristiano")
+                                                                                    .balance(100000.00d)
+                                                                                    .build();
+
+        System.out.println(bankAccountBuilderLombok);
+        bankAccountBuilderLombok.deposit(100);
+        bankAccountBuilderLombok.withdraw(100);
+        System.out.println(bankAccountBuilderLombok);
     }
 }
